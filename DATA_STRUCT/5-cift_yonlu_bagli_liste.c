@@ -40,9 +40,9 @@ node *siraliEkle(node *r, int newValue) {
     temp->next = iter->next;
     iter->next = temp;
     temp->prew = iter;
-    // Sondeki degerden sonraya eleman eklenip eklenmediginin kontrolunu yapmak onemlidir.
-    // Cunku sondeki degerin NEXT'inin NULL'u gostermesi bir problem degil iken
-    // NULL'dan tekrar prew ile son degere donme senaryosu problem olusturur
+    // Sondaki degerden sonraya eleman eklenip eklenmediginin kontrolunu yapmak onemlidir.
+    // Cunku sondaki degerin <next>'inin [NULL]'u gostermesi bir problem degil iken
+    // [NULL]'dan tekrar <prew> ile son degere donme senaryosu problem olusturur
     if (temp->next != NULL) {
         temp->next->prew = temp;
     }
@@ -70,9 +70,9 @@ node *sil(node *r, int selectedValue) {
     temp = iter->next;
     iter->next = iter->next->next;
     free(temp);
-    // Sondeki degeri silip silmedigimizin kontrolunu yapmak onemlidir.
-    // Cunku sondeki degerin NEXT'inin NULL'u gostermesi bir problem degil iken
-    // NULL'dan tekrar prew ile son degere donme senaryosu problem olusturur
+    // Sondaki degeri silip silmedigimizin kontrolunu yapmak onemlidir.
+    // Cunku sondaki degerin <next>'inin [NULL]'u gostermesi bir problem degil iken
+    // [NULL]'dan tekrar <prew> ile son degere donme senaryosu problem olusturur
     if (iter->next != NULL){
         iter->next->prew = iter;
     }

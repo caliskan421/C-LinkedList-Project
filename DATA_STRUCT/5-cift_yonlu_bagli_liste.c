@@ -91,5 +91,4 @@ int main() {
     root = sil(root, 1);
     root = sil(root, 4);
     bastir(root);
-
 }

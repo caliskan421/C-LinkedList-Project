@@ -40,7 +40,7 @@ node *siraliEkle(node *r, int newValue) {
     temp->next = iter->next;
     iter->next = temp;
     temp->prew = iter;
-    // Sondeki degeri silip silmedigimizin kontrolunu yapmak onemlidir.
+    // Sondeki degerden sonraya eleman eklenip eklenmediginin kontrolunu yapmak onemlidir.
     // Cunku sondeki degerin NEXT'inin NULL'u gostermesi bir problem degil iken
     // NULL'dan tekrar prew ile son degere donme senaryosu problem olusturur
     if (temp->next != NULL) {

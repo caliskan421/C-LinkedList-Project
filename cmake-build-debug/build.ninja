@@ -67,8 +67,8 @@ build CMakeFiles/untitled1.dir/DATA_STRUCT/3-bagli_liste.c.o: C_COMPILER__untitl
   OBJECT_DIR = CMakeFiles/untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled1.dir/DATA_STRUCT
 
-build CMakeFiles/untitled1.dir/DATA_STRUCT/cift_yonlu_bagli_liste.c.o: C_COMPILER__untitled1_unscanned_Debug /Users/muhammetalicaliskan/CLionProjects/untitled1/DATA_STRUCT/cift_yonlu_bagli_liste.c || cmake_object_order_depends_target_untitled1
-  DEP_FILE = CMakeFiles/untitled1.dir/DATA_STRUCT/cift_yonlu_bagli_liste.c.o.d
+build CMakeFiles/untitled1.dir/DATA_STRUCT/5-cift_yonlu_bagli_liste.c.o: C_COMPILER__untitled1_unscanned_Debug /Users/muhammetalicaliskan/CLionProjects/untitled1/DATA_STRUCT/5-cift_yonlu_bagli_liste.c || cmake_object_order_depends_target_untitled1
+  DEP_FILE = CMakeFiles/untitled1.dir/DATA_STRUCT/5-cift_yonlu_bagli_liste.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/untitled1.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled1.dir/DATA_STRUCT
@@ -81,7 +81,7 @@ build CMakeFiles/untitled1.dir/DATA_STRUCT/cift_yonlu_bagli_liste.c.o: C_COMPILE
 #############################################
 # Link the static library libuntitled1.a
 
-build libuntitled1.a: C_STATIC_LIBRARY_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/DATA_STRUCT/1-DERS.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/2-data_struct.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/3-bagli_liste.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/cift_yonlu_bagli_liste.c.o
+build libuntitled1.a: C_STATIC_LIBRARY_LINKER__untitled1_Debug CMakeFiles/untitled1.dir/DATA_STRUCT/1-DERS.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/2-data_struct.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/3-bagli_liste.c.o CMakeFiles/untitled1.dir/DATA_STRUCT/5-cift_yonlu_bagli_liste.c.o
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/untitled1.dir

@@ -51,6 +51,19 @@ void freeList(struct node *head) {
     }
 }
 
+void reverse(struct node **head){
+    struct node *prew = NULL;
+    struct node * current = *head; // Mevcut düğümü işaret eder...
+    struct node *next;
+    while(current != NULL){
+        next = current->next;
+        current->next = prew;
+        prew = current;
+        current = next;
+    }
+     *head = prew;
+}
+
 int main(void) {
     // Boş bir liste oluştur
     struct node *head = NULL;
@@ -64,8 +77,14 @@ int main(void) {
     printf("Liste: ");
     printList(head);
 
+    reverse(&head);
+    printf("Liste: ");
+    printList(head);
+
     // Listeyi temizle (free)
     freeList(head);
-
     return 0;
 }
+
+// ÇEVRİMSEL -> BAĞLI
+// BAĞLI -> ÇEVRİMSEL

@@ -20,6 +20,8 @@ int pop() {
     return array[--top];
 }
 
+
+
 void push(int newValue) {
     if (top >= size) {
         int *array2 = (int *) malloc(sizeof(int) * size * 2);
